@@ -2,4 +2,6 @@
 
 require "vue/admin/connexion.php";
 
+} else {
+  echo $_SESSION["pseuso"];
 }?>

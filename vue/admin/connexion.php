@@ -1,7 +1,7 @@
 <div class="card" id="formconnexion">
 
 
-<form class="col s12 m6" action="index.php" method="post">
+<form class="col s12 m6" action="controlleur/admin/connexion_post.php" method="post">
   <div class="input-field col s6">
            <i class="material-icons prefix">email</i>
            <input id="icon_prefix" type="email" name="mail" class="validate" required>

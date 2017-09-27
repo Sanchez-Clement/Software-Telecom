@@ -2,7 +2,7 @@
 <div id="modal1" class="modal">
    <div class="modal-content">
      <h4 class="center">Inscription</h4>
-     <form class="" action="index.html" method="post">
+     <form class="" action="controlleur/admin/inscription_post.php" method="post">
        <div class="input-field">
 
                 <input id="nom" type="text" name="nom" class="validate" required>
