@@ -7,6 +7,7 @@
 
                 <input id="nom" type="text" name="nom" class="validate" required>
                 <label for="nom">Nom</label>
+                <? ?>
               </div>
               <div class="input-field ">
 

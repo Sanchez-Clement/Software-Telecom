@@ -6,11 +6,13 @@
            <i class="material-icons prefix">email</i>
            <input id="icon_prefix" type="email" name="mail" class="validate" required>
            <label for="icon_prefix">E-mail</label>
+<?php if(isset($_SESSION["error"]["mail_connexion"])) {echo $_SESSION["error"]["mail_connexion"];} ?>
          </div>
          <div class="input-field col s6">
              <i class="material-icons prefix">enhanced_encryption</i>
              <input id="passwd" type="password" name="passwd" class="validate" required>
              <label for="passwd">Mot de passe</p></label>
+             <?php if(isset($_SESSION["error"]["passwd_connexion"])) {echo $_SESSION["error"]["passwd_connexion"];} ?>
            </div>
            <div class="input-field col s6">
            <input type="submit" name="" value="Connexion" class="btn">

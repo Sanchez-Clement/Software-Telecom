@@ -1,7 +1,7 @@
-<?php if (!isset($_SESSION["pseuso"])) {
+<?php if (!isset($_SESSION["pseudo"])) {
 
 require "vue/admin/connexion.php";
 
 } else {
-  echo $_SESSION["pseuso"];
+  require "controlleur/admin/get_projects.php";
 }?>

@@ -28,7 +28,7 @@
     <ul id="nav-mobile" class="right">
       <li>Session de : <?php echo $_SESSION['pseudo'] ?> </li>
 
-      <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+      <li><a href="controlleur/admin/logout.php"><i class="material-icons">search</i></a></li>
     </ul>
     <?php
 } ?>
