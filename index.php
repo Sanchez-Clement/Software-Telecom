@@ -1,3 +1,4 @@
 <?php require "vue/header.php" ?>
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+<?php require "controlleur/admin/admin.php" ?>
+      
 <?php require "vue/footer.php" ?>

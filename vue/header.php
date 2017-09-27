@@ -23,11 +23,15 @@
 
 
     <a href="#" class="brand-logo"><img src="img/logo.png" alt=""></a>
+<?php if (isset($_SESSION['pseudo'])) {
+    ?>
     <ul id="nav-mobile" class="right">
-      <li>Session de : </li>
+      <li>Session de : <?php echo $_SESSION['pseudo'] ?> </li>
 
       <li><a href="sass.html"><i class="material-icons">search</i></a></li>
     </ul>
+    <?php
+} ?>
   </div>
 </nav>
       </header>
