@@ -5,9 +5,9 @@
        <div class="input-field">
 
                 <select class="" name="category">
-                  <option value="">maison</option>
-                  <option value="">appartement</option>
-                  <option value="">lotissement</option>
+                  <option value="maison">maison</option>
+                  <option value="appartement">appartement</option>
+                  <option value="lotissement">lotissement</option>
                 </select>
             <label>Catégory :</label>
               </div>

@@ -5,4 +5,4 @@
 
   </div>
 
-  <?php require "vue/admin/modal_addproduct.php" ?>
+<?php var_dump($projects) ?>
