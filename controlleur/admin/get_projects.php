@@ -10,5 +10,16 @@ require "vue/admin/modal_addproduct.php" ;
 require "modele/connexion_sql.php";
 require "modele/admin/get_projects.php";
 $projects = getProjects($_SESSION['id'],$category);
-require "vue/admin/get_projects.php"
+
+foreach ($projects as $key => $project) {
+$projects[$key]['id']=$project["id"];
+$projects[$key]['title_project']= htmlspecialchars($project['title_project']);
+$projects[$key]['resume_project']= htmlspecialchars($project['resume_project']);
+$projects[$key]['deadline']= $project['deadline'];
+} ;
+
+if ($projects ) {
+
+
+require "vue/admin/get_projects.php";}
  ?>

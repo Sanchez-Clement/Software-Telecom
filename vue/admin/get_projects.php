@@ -5,4 +5,31 @@
 
   </div>
 
-<?php var_dump($projects) ?>
+
+<div class="row">
+
+
+
+<?phpforeach($projects as $project) {?>
+
+
+<article class="card col s12 m6 l4 lime white-text">
+<div class="card-content">
+  <h4 class="card-title center"><?php echo $project['title_project'] ?> </h4>
+<p><?php echo $project['resume_project'] ?></p>
+
+</div>
+<div class="card-action ">
+  <form class="" action="controlleur/admin/gettask_post.php" method="post">
+    <input type="hidden" name="id" value="<?php echo $project['id'] ?>">
+  <input class="btn" type="submit" value="Détail">
+  </form>
+<p class="chip"><?php echo $project['deadline'] ?></p>
+</div>
+
+</article>
+
+
+<?php} ;?>
+
+</div>
