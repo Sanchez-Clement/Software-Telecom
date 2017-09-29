@@ -22,7 +22,6 @@ $req = $bdd->prepare('SELECT * FROM Task  WHERE id_project = :id');
 $req->execute(array(
 'id' => $id ,
 
-
 ));
 
 $task = $req->fetchAll() ;

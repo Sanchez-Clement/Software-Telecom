@@ -18,6 +18,7 @@ $tasks = getTask($id);
 foreach ($tasks as $key => $task) {
 $tasks[$key]['id']=$task["id"];
 $tasks[$key]['title_task']= htmlspecialchars($task['title_task']);
+
 // $tasks[$key]['deadline']= $task['deadline'];
 } ;
 
