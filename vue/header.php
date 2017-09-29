@@ -22,7 +22,7 @@
 
 
 
-    <a href="#" class="brand-logo"><img src="img/logo.png" alt=""></a>
+    <a href="index.php" class="brand-logo"><img src="img/logo.png" alt=""></a>
 <?php if (isset($_SESSION['pseudo'])) {
     ?>
     <ul id="nav-mobile" class="right">

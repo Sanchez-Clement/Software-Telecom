@@ -20,8 +20,8 @@
 
 </div>
 <div class="card-action ">
-  <form class="" action="controlleur/admin/gettask_post.php" method="post">
-    <input type="hidden" name="id" value="<?php echo $project['id'] ?>">
+  <form class="" action="index.php" method="get">
+    <input type="hidden" name="id_project" value="<?php echo $project['id'] ?>">
   <input class="btn" type="submit" value="Détail">
   </form>
 <p class="chip"><?php echo $project['deadline'] ?></p>
