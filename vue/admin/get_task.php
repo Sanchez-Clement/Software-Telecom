@@ -23,16 +23,17 @@
 
   <div class="collapsible-body white">
     <?php require "controlleur/admin/get_subtask.php" ?>
-<form class="" action="index2.php" method="post">
+<form class="" action="controlleur/admin/updatecheckbox.php" method="post">
 
 <?php foreach ($subtasks as $subtask) {?>
 
   <p>
-  <input type="checkbox" id="<?php echo $subtask['title_subtask'] ?>" name="test<?php echo $subtask['id'] ?>" value="1" <?php if ($subtask['done_subtask']==1 ) {
+  <input type="checkbox" id="<?php echo $subtask['title_subtask'] ?>" name="subtask<?php echo $subtask['id'] ?>" value="1" <?php if ($subtask['done_subtask']==1 ) {
   echo "checked='checked'";} ?>>
 
   <label for="<?php echo $subtask['title_subtask'] ?>"><?php echo $subtask['title_subtask']?></label>
   <input type="hidden" name="id[<?php echo $subtask['id'] ?>]" value="<?php echo $subtask['id'] ?>">
+  <input type="hidden" name="id_project" value="<?php echo $thisProject['id'] ?>">
   </p>
 
 
@@ -42,7 +43,7 @@
 
 
 <?php } ; ?>
-<input type="submit" name="" value="envoyer">
+<input class='btn' type="submit" name="" value="Enregistrer">
 </form>
 </div>
 </li>
