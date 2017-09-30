@@ -8,7 +8,7 @@
 <h3 class="center white-text"><?php echo $thisProject['title_project'] ?><span class="chip"><?php echo $thisProject['deadline']  ?> </span></h3>
 </div>
 
-<ul class="collapsible" data-collapsible="accordion">
+<ul class="collapsible popout" data-collapsible="accordion">
 
   <?php foreach ($tasks as $task) {?>
 
@@ -19,6 +19,8 @@
   <div class="collapsible-header">
     <p><?php echo $task['title_task'] ?></p>
     <a class="btn-floating btn-min waves-effect waves-light red right modal-trigger" data-target='<?php echo "modalsubtask" . $task["id"]?>' ><i class="material-icons">add</i></a>
+    <a class="btn-floating btn-min waves-effect waves-light red right" href="controlleur/admin/delete_task.php?id_task=<?php echo
+    $task['id']?>&id_project=<?php echo $thisProject['id'] ?>" ><i class="material-icons">healing</i></a>
   </div>
 
   <div class="collapsible-body white">
@@ -32,6 +34,8 @@
   echo "checked='checked'";} ?>>
 
   <label for="<?php echo $subtask['title_subtask'] ?>"><?php echo $subtask['title_subtask']?></label>
+  <a class="btn-floating btn-min waves-effect waves-light red right" href="controlleur/admin/delete_subtask.php?id_subtask=<?php echo
+  $subtask['id']?>&id_project=<?php echo $thisProject['id'] ?>" ><i class="material-icons">healing</i></a>
   <input type="hidden" name="id[<?php echo $subtask['id'] ?>]" value="<?php echo $subtask['id'] ?>">
   <input type="hidden" name="id_project" value="<?php echo $thisProject['id'] ?>">
   </p>
