@@ -32,8 +32,8 @@ $('select').material_select();
     close: 'Ok',
     closeOnSelect: false // Close upon selecting a date,
   });
-        
 
+$('.collapsible').collapsible();
 </script>
 </body>
 </html>
