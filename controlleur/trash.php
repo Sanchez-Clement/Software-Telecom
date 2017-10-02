@@ -10,7 +10,7 @@ $trashes = getTrash($_SESSION['id']);
 foreach ($trashes as $key => $trash) {
 $trashes[$key]['id']=$trash["id"];
 $trashes[$key]['title_project']= htmlspecialchars($trash['title_project']);
-$trashes[$key]['deadline']= $trash['deadline'];
+$trashes[$key]['deadline_fr']= $trash['deadline_fr'];
 } ;
 
 require "vue/admin/modal_trash.php"

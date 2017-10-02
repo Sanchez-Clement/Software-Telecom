@@ -13,7 +13,7 @@ $thisProjects = getThisProject($id);
 foreach ($thisProjects as $key => $thisProject) {
 $thisProjects[$key]['id']=$thisProject["id"];
 $thisProjects[$key]['title_project']= htmlspecialchars($thisProject['title_project']);
-$thisProjects[$key]['deadline']= $thisProject['deadline'];
+$thisProjects[$key]['deadline_fr']= $thisProject['deadline_fr'];
 } ;
 
 $tasks = getTask($id);

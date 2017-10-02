@@ -6,7 +6,7 @@
     <a class="btn-floating btn-large waves-effect waves-light red right modal-trigger" data-target="modal3"><i class="material-icons">add</i></a>
 
     <h3 class="center white-text"><?php echo $thisProject['title_project'] ?></h3>
-    <p class="chip center col s12"><?php echo $thisProject['deadline']  ?> </p>
+    <p class="chip center col s12"><?php echo $thisProject['deadline_fr']  ?> </p>
 </div>
 
 <!-- list of tasks -->

@@ -27,7 +27,7 @@
             <input type="hidden" name="id_project" value="<?php echo $project['id'] ?>">
             <input class="btn" type="submit" value="Détail">
         </form>
-        <p class="chip"><?php echo $project['deadline'] ?></p>
+        <p class="chip"><?php echo $project['deadline_fr'] ?></p>
       </div>
 
     </article>

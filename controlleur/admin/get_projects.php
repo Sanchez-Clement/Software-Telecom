@@ -18,7 +18,7 @@ foreach ($projects as $key => $project) {
 $projects[$key]['id']=$project["id"];
 $projects[$key]['title_project']= htmlspecialchars($project['title_project']);
 $projects[$key]['resume_project']= htmlspecialchars($project['resume_project']);
-$projects[$key]['deadline']= $project['deadline'];
+$projects[$key]['deadline_fr']= $project['deadline_fr'];
 } ;
 
 if ($projects ) {
