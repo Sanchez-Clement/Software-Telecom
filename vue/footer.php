@@ -5,9 +5,9 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
 
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -19,8 +19,7 @@
 </script>
 <script>
 
-
-  // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+// jquery for materialize
   $('.modal').modal();
 $('select').material_select();
 
@@ -34,6 +33,11 @@ $('select').material_select();
   });
 
 $('.collapsible').collapsible();
+
+// jquery to add a class green on the task done :
+
+// when the page is loading
+
 $(".abc").each(function(){
 
         var a = $(this).find("input[type='checkbox']");
@@ -44,6 +48,7 @@ $(".abc").each(function(){
     }
 );
 
+// when you check the subtasks
 $(".abc").each(function(){
     $(this).change(function(){
         var a = $(this).find("input[type='checkbox']");
@@ -55,12 +60,6 @@ $(".abc").each(function(){
 )})
 
 
-// $(".abc input[type='checkbox']").change(function(){
-//     var a = $(".abc input[type='checkbox']");
-//     if(a.length == a.filter(":checked").length){
-//         alert('all checked');
-//     }
-// });
 
 </script>
 </body>

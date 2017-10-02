@@ -1,4 +1,6 @@
 <?php
+// to delete the subtask from bdd
+
 $id_subtask = $_GET['id_subtask'];
 $id_project = $_GET['id_project'];
 require '../../modele/connexion_sql.php';

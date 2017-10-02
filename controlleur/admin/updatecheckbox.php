@@ -1,4 +1,6 @@
 <?php
+// To update the validate checkbox
+
 require "../../modele/connexion_sql.php";
 require "../../modele/admin/update_subtask.php";
 

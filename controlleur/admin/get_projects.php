@@ -1,4 +1,5 @@
 <?php
+// To show all the project with the specific category and the id manager
 
 if(!isset($_POST["category"])) {
   $category = "maison";
@@ -9,6 +10,8 @@ require "vue/admin/selectCategory.php";
 require "vue/admin/modal_addproduct.php" ;
 require_once "modele/connexion_sql.php";
 require "modele/admin/get_projects.php";
+
+
 $projects = getProjects($_SESSION['id'],$category);
 
 foreach ($projects as $key => $project) {
@@ -19,7 +22,6 @@ $projects[$key]['deadline']= $project['deadline'];
 } ;
 
 if ($projects ) {
-
 
 require "vue/admin/get_projects.php";}
  ?>

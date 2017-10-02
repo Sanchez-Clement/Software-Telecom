@@ -1,4 +1,7 @@
 <?php
+// To add a new manger in bdd
+
+
 session_start();
 $firstname = htmlspecialchars($_POST['prenom']);
 $lastname = htmlspecialchars($_POST['nom']);

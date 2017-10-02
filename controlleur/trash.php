@@ -1,4 +1,6 @@
 <?php
+// To update the visibility of the project
+
 require_once " ../../modele/connexion_sql.php";
 require_once " ../../modele/admin/trash.php";
 

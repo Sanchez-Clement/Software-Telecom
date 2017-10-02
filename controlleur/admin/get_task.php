@@ -1,4 +1,7 @@
 <?php
+// To get all the tasks with the id_project
+
+
 $id = $_GET['id_project'];
 
 require_once "modele/connexion_sql.php";
