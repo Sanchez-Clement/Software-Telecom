@@ -15,7 +15,7 @@
 
 <article class="card col s12 m6 l4 lime white-text">
 <div class="card-content">
-  <h4 class="card-title center"><?php echo $project['title_project'] ?> <a href="controlleur/admin/delete_project.php?delpro=<?php echo $project['id'] ?>" class="btn-floating red"><i class="material-icons">clear</i></a> </h4>
+  <h4 class="card-title center"><?php echo $project['title_project'] ?> <a href="controlleur/admin/delete_project.php?delpro=<?php echo $project['id'] ?>" class="btn-floating red right"><i class="material-icons">clear</i></a> </h4>
 <p><?php echo $project['resume_project'] ?></p>
 
 </div>

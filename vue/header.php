@@ -25,14 +25,15 @@
     <a href="index.php" class="brand-logo"><img src="img/logo.png" alt=""></a>
 <?php if (isset($_SESSION['pseudo'])) {
     ?>
+    <?php require 'controlleur/trash.php' ?>
     <ul id="nav-mobile" class="right">
-      <li>Session de : <?php echo $_SESSION['pseudo'] ?> </li>
-
-      <li><a href="controlleur/admin/logout.php"><i class="material-icons">search</i></a></li>
+      <li class="hide-on-med-and-down">Session de : <?php echo $_SESSION['pseudo'] ?> </li>
+<li><a  class="modal-trigger" data-target="modal4"><i class="material-icons">build</i></a></li>
+      <li><a href="controlleur/admin/logout.php"><i class="material-icons">backspace</i></a></li>
     </ul>
     <?php
 } ?>
   </div>
 </nav>
       </header>
-      <main class="container">
+      <main class="container" id="principal">

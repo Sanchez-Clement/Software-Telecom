@@ -34,6 +34,34 @@ $('select').material_select();
   });
 
 $('.collapsible').collapsible();
+$(".abc").each(function(){
+
+        var a = $(this).find("input[type='checkbox']");
+
+        if(a.length == a.filter(":checked").length && a.length > 0){
+          $( this ).children("div:first").addClass( "green" );
+        } else {  $( this ).children("div:first").removeClass( "green" );}
+    }
+);
+
+$(".abc").each(function(){
+    $(this).change(function(){
+        var a = $(this).find("input[type='checkbox']");
+
+        if(a.length == a.filter(":checked").length && a.length > 0){
+          $( this ).children("div:first").addClass( "green" );
+        } else {  $( this ).children("div:first").removeClass( "green" );}
+    }
+)})
+
+
+// $(".abc input[type='checkbox']").change(function(){
+//     var a = $(".abc input[type='checkbox']");
+//     if(a.length == a.filter(":checked").length){
+//         alert('all checked');
+//     }
+// });
+
 </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 #top img {
-  width: 50%;
+  width: 150Px;
 padding: 10px;
 }
 
@@ -14,4 +14,41 @@ background-size: cover;
 #formconnexion {
   padding: 10px;
   margin-top: 50px;
+}
+
+#subtasks {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+#subtasks li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#principal .chip {
+  margin : 0;
+}
+
+#principal .card-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+#principal .card i {
+  line-height: inherit;
+}
+
+#task .taskDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+#task .links a {
+  margin: 0 10px;
+}
+
+#task .links i {
+  width: inherit;
 }

@@ -1,7 +1,7 @@
 <div class="row">
 
 
-<form class="input-field col s4"  method="post">
+<form class="input-field col s5"  method="post">
 
 
 
@@ -10,7 +10,7 @@
   <option value="appartement" <?php if ($category=="appartement"){echo "selected";} ?>>appartement</option>
   <option value="lotissement" <?php if ($category=="lotissement"){echo "selected";} ?>>lotissement</option>
 </select>
-<label>Catégory :</label>
+<label class="black-text">Catégory :</label>
 <!-- <input name="submit" id="submit" type="submit" value="SEND FORM"> -->
 </form>
 </div>
