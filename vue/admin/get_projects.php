@@ -6,11 +6,11 @@
 </div>
 
 
-<div class="row">
+<div class="row" id="project">
 
 <!-- Make a card for each project -->
 
-<?phpforeach($projects as $project) {?>
+<?php foreach($projects as $project) {?>
 
 
   <article class="card col s12 m6 l4 lime white-text">
@@ -33,6 +33,6 @@
     </article>
 
 
-<?php} ;?>
+<?php } ;?>
 
 </div>
