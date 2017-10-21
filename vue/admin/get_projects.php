@@ -4,8 +4,9 @@
     <a class="btn-floating btn-large red modal-trigger" data-target="modal2" ><i class="large material-icons">add_circle</i></a>
 
 </div>
-
-
+<?php
+if ($projects ) {
+?>
 <div class="row" id="project">
 
 <!-- Make a card for each project -->
@@ -36,3 +37,4 @@
 <?php } ;?>
 
 </div>
+<?php } ?>

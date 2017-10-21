@@ -21,7 +21,7 @@ $projects[$key]['resume_project']= htmlspecialchars($project['resume_project']);
 $projects[$key]['deadline_fr']= $project['deadline_fr'];
 } ;
 
-if ($projects ) {
 
-require "vue/admin/get_projects.php";}
+
+require "vue/admin/get_projects.php";
  ?>

@@ -9,6 +9,8 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+        <script src="https://use.fontawesome.com/01d5fc61d4.js"></script>
+
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -36,8 +38,8 @@
               <ul id="nav-mobile" class="right">
 
                   <li class="hide-on-med-and-down">Session de : <?php echo $_SESSION['pseudo'] ?> </li>
-                  <li><a  class="modal-trigger" data-target="modal4"><i class="material-icons">build</i></a></li>
-                  <li><a href="controlleur/admin/logout.php"><i class="material-icons">backspace</i></a></li>
+                  <li><a  class="modal-trigger" data-target="modal4"><i class="fa fa-trash"></i></a></li>
+                  <li><a href="controlleur/admin/logout.php"><i class="fa fa-sign-out"></i></a></li>
               </ul>
     <?php
 } ?>
