@@ -13,7 +13,7 @@ $deadline = date_format($date, 'Y-m-d');
 
 $title  = htmlspecialchars($_POST['title']);
 $resume  = htmlspecialchars($_POST['resume']);
-echo $_SESSION['id'];
+
 
 require_once "../../modele/connexion_sql.php";
 require "../../modele/admin/addproject.php";
